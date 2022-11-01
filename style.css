@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
 
 :root {
-	--gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+	--gradient: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
 }
 
 * {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	line-height: 1.25em;
 }
 
@@ -20,23 +20,23 @@ body {
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	background-image: url('https://source.unsplash.com/1600x900?landscape');
-    background-repeat: no-repeat;
-    background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .container {
 	border-radius: 25px;
 	-webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
 	background-color: #222831;
 	color: #ffffff;
 	height: 400px;
@@ -46,24 +46,24 @@ body {
 	position: relative;
 	height: 100%;
 	border-radius: 25px;
-    
-    
+
+
 	width: 300px;
 	-webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
 	-webkit-transition: -webkit-transform 300ms ease;
 	transition: -webkit-transform 300ms ease;
 	-o-transition: transform 300ms ease;
 	transition: transform 300ms ease;
 	transition: transform 300ms ease, -webkit-transform 300ms ease;
 	-webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
-	        transform: translateZ(0) scale(1.02) perspective(1000px);
+	transform: translateZ(0) scale(1.02) perspective(1000px);
 	float: left;
 }
 
 .weather-side:hover {
 	-webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
-	        transform: scale(1.1) perspective(1500px) rotateY(10deg);
+	transform: scale(1.1) perspective(1500px) rotateY(10deg);
 }
 
 .weather-gradient {
@@ -76,17 +76,18 @@ body {
 	border-radius: 25px;
 	opacity: 0.8;
 }
+
 .weather-side.visible {
-    visibility: hidden;
-    position: relative;
+	visibility: hidden;
+	position: relative;
 }
 
 .weather-side.visible::after {
-    visibility: visible;
-    content: 'Loading...';
-    position: absolute;
-    top: 40%;
-    left: 40%;
+	visibility: visible;
+	content: 'Loading...';
+	position: absolute;
+	top: 40%;
+	left: 40%;
 }
 
 .date-container {
@@ -122,14 +123,14 @@ body {
 }
 
 .weather-icon {
-    margin-left: -15px;
-    margin-bottom: -22px;
+	margin-left: -15px;
+	margin-bottom: -22px;
 }
 
 .weather-icon.feather {
 	height: 60px;
 	width: auto;
-    
+
 }
 
 .weather-temp {
@@ -152,7 +153,7 @@ body {
 .today-info {
 	padding: 15px;
 	margin: 0 25px 25px 25px;
-/* 	box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25); */
+	/* 	box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25); */
 	border-radius: 10px;
 }
 
@@ -168,20 +169,22 @@ body {
 .today-info>div .value1 {
 	float: right;
 }
+
 .today-info>div .value2 {
 	float: right;
 }
+
 .today-info>div .value3 {
 	float: right;
 }
 
 .week-list {
-    visibility: hidden;
+	visibility: hidden;
 	list-style-type: none;
 	padding: 0;
 	margin: 10px 35px;
 	-webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
-	        box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	background: #
 }
@@ -198,12 +201,12 @@ body {
 
 .week-list>li:hover {
 	-webkit-transform: scale(1.1);
-	    -ms-transform: scale(1.1);
-	        transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 	background: #fff;
 	color: #222831;
 	-webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
+	box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
 }
 
 .week-list>li.active {
@@ -240,8 +243,8 @@ body {
 	outline: none;
 	width: 100%;
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	border: none;   
+	box-sizing: border-box;
+	border: none;
 	border-radius: 25px;
 	padding: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -249,7 +252,7 @@ body {
 	color: #ffffff;
 	font-weight: 700;
 	-webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
-	        box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
 	-webkit-transition: -webkit-transform 200ms ease;
 	transition: -webkit-transform 200ms ease;
 	-o-transition: transform 200ms ease;
@@ -258,17 +261,50 @@ body {
 }
 
 .location-label {
-    position: relative;
-  }
-  
-  .location-label:before {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 3px;
-    bottom: 0;
-    width: 20px;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
-    opacity: 0.7;
-  }
-  
+	position: relative;
+}
+
+.location-label:before {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	bottom: 0;
+	width: 20px;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+	opacity: 0.7;
+}
+
+
+@media only screen and (max-width: 730px) {
+	.container {
+		max-height: 300px;
+	}
+
+	.location-container {
+		margin: 10px auto;
+	}
+
+	.info-side {
+		margin-left: -263px;
+	}
+
+	.today-info {
+		padding: 71px;
+	}
+
+}
+
+@media only screen and (max-width: 425px) {
+	.info-side {
+		margin-left: -320px;
+	}
+
+	.today-info-container {
+		display: none;
+	}
+
+	.location-container {
+		margin: 172px auto;
+	}
+}
